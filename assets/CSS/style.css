@@ -1,0 +1,497 @@
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 15px;
+}
+
+#main {
+    
+}
+
+#header {
+    position: fixed;
+    background-color: #000;
+    height: 46.5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    position: relative;
+    display: inline-block;
+
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+#nav>li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav>li:hover>a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 10px #333;
+    min-width: 160px;
+}
+
+#nav .subnav li a {
+    line-height: 37px;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+#nav li:hover> .subnav {
+    display: block;
+}
+
+#header .search-buttom {
+    float: right;
+}
+
+#header .search-icon{
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 23px;
+}
+
+#header .search-buttom:hover {
+    background-color: #f44336;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background-color: #ccc;
+    background-image: url(/assets/img/silder/chicago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#slider .text-contents {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#slider .text-heading {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    color: #fff;
+    margin: 15px 0;
+}
+
+
+#content {
+    
+}
+
+#content .content-section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+#content .content-section .content-heading {
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+#content .content-section .content-sub-heading {
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+
+}
+
+#content .content-section .about-content{
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#content .introduce-member {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0;
+}
+
+#content .introduce-member .menber {
+    text-align: center;
+}
+
+#content .introduce-member .member-name {
+    color: #000;
+    margin: 15px 0;
+}
+
+#content .introduce-member .member-img {
+    width: 60%;
+    margin: 0 0 16px;
+    border-radius: 4px;
+}
+
+#tour-section {
+    background-color: #000;
+    
+}
+
+#tour-section .content-heading {
+    color: #fff;
+}
+
+#tour-section .content-sub-heading {
+    color: #fff;
+}
+
+#tour-section .tour-month {
+    background-color: #fff;
+    list-style-type: none;
+}
+
+#tour-section .tour-month li{
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+#tour-section .tour-month li:last-child {
+    border-bottom: none;
+}
+
+.tour-month .ticket-status {
+    color: #fff;
+    text-align: center;
+}
+
+.tour-month .ticket-status.sold-out {
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+}
+
+.tour-month .ticket-status.remain-ticket {
+    background-color: #000;
+    float: right !important;
+    margin-right: 16px;
+    padding: 0 8px;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin-top: -2px;
+    width: 24px;
+    height: 24px;
+}
+
+#tour-section .place {
+    display: flex;
+    margin: 0 -16px;
+    padding: 32px 8px;
+}
+
+#tour-section .place .place-info {
+    width: 33.33333%;
+    padding: 0 8px;
+    margin-bottom: 16px !important;
+}
+
+.place .place-info .place-img {
+    width: 100%;
+}
+
+.place .place-info .place-img:hover {
+    opacity: 0.6;
+}
+
+.place .place-info .place-content {
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.place .place-content .address, 
+.place .place-content .date,
+.place .place-content .slogan {
+    margin: 15px 0;
+}
+
+.place .place-content .address {
+    font-weight: bold;
+}
+
+.place .place-content .date {
+    opacity: 0.6;
+}
+
+.place .place-content .slogan {
+    line-height: 1.6;
+}
+
+.place .place-content .buy-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.place .place-content .buy-button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Tickets Modal */
+#tickets-modal {
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#tickets-modal.open {
+    display: block;
+}
+
+#tickets-modal .modal-container {
+    width: 900px;
+    margin: auto;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease;
+}
+
+#tickets-modal .modal-container .header {
+    position: relative;
+    background-color: #009688;
+    color: #fff;
+    padding: 52px 16px;
+    font-size: 34px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+#tickets-modal .modal-container .close {
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    top: 0;
+    width: 46px;
+    height: 52px;
+    line-height: 36px;
+    padding: 8px 16px;
+}
+
+#tickets-modal .modal-container .close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#tickets-modal .modal-container .modal-content {
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+.modal-content .modal-label {
+    display: block;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.modal-content .input {
+    width: 100%;
+    padding: 8px;
+    border: 0.667px solid #ccc;
+    font-size: 16px;
+}
+
+.modal-content .pay-button {
+    display: block;
+    margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    border: 0;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.modal-content .pay-button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .close-button {
+    padding: 10px 14px;
+    margin: 16px 0;
+    font-size: 16px;
+    border: 0;
+    background-color: #F44336;
+    color: #fff;
+}
+
+.modal-content .close-button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .help {
+    float: right;
+    font-size: 16px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.modal-content .help a {
+    color: #2196f3;
+}
+
+#contact-section .content-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.content-contact .contact-text {
+    width: 50%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.content-contact .contact-text i {
+    width: 24px;
+}
+
+.content-contact .contact-box {
+    width: 50%;
+}
+
+.content-contact .name input,
+.content-contact .email input,
+.content-contact .massage {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.content-contact .contact-box .name-email {
+    display: flex;
+}
+
+.contact-box .name-email .name {
+    padding: 0 8px;
+    margin: 0 -8px;
+}
+
+.contact-box .name-email .email {
+    padding: 0 8px;
+    margin-right: -8px;
+    margin-left: 8px;
+}
+
+.contact-box .massage {
+    margin-top: 8px;
+}
+
+.contact-box .send-button {
+    padding: 10px 16px;
+    margin: 16px 0;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    float: right;
+}
+
+.contact-box .send-button:hover {
+    cursor: pointer;
+}
+
+#content .map {
+}
+
+#content .map img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    opacity: 0.6;
+}
+
+#footer .social-media {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .social-media a {
+    color: #000;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer a:hover {
+    opacity: 0.6;
+}
+
